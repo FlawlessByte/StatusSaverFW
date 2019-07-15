@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bottom_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_images"
+        android:icon="@drawable/picture"
+        android:title="Images"
+        app:cnb_iconColor="@color/design_default_color_primary"/>
+    <item
+        android:id="@+id/menu_videos"
+        android:icon="@drawable/youtube"
+        android:title="Videos"
+        app:cnb_iconColor="@color/colorAccent"/>
+    <item
+        android:id="@+id/menu_saved"
+        android:icon="@drawable/download"
+        android:title="Saved"
+        app:cnb_iconColor="@color/design_default_color_primary" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:cnb_iconColor="@color/colorPrimary" />
+</menu>

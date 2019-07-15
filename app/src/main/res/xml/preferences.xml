@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <co.realinventor.statussaverfw.Helpers.CustomPreferenceCategory android:title="Settings"/>
+
+    <PreferenceCategory android:title="General">
+        <Preference
+            android:summary="1.0"
+            android:selectable="false"
+            android:icon="@drawable/logo_small_res"
+            android:title="@string/version" />
+
+        <Preference
+            android:key="key_feedback"
+            android:title="@string/send_feedback"
+            android:icon="@drawable/love"
+            android:summary="@string/feedback_summary"/>
+
+        <Preference
+            android:key="key_rate_app"
+            android:icon="@drawable/review"
+            android:summary="@string/rate_app_summary"
+            android:title="@string/rate_app" />
+
+        <Preference
+            android:key="key_whats_sel"
+            android:icon="@drawable/mobile_app"
+            android:summary="@string/whats_sel_summary"
+            android:title="@string/whats_sel_title" />
+
+        <ListPreference
+            android:title="Grid column"
+            android:summary="Select the number of columns to display in the grid!"
+            android:key="key_grid_column"
+            android:icon="@drawable/menu"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:selectable="false"
+            android:icon="@drawable/about"
+            android:summary="@string/about_pref" />
+
+        <Preference
+            android:key="key_privacy"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy_title"
+            android:summary="@string/privacy_summary"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
